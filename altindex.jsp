@@ -1,7 +1,3 @@
-<%@page import="com.entity.viewlist"%>
-<%@page import="java.util.List"%>
-<%@page import="com.conn.DBConnect"%>
-<%@page import="com.dao.DAO2"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>

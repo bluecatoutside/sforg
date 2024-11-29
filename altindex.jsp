@@ -103,7 +103,6 @@ img {vertical-align: middle;}
 <body>
 <form action="" method= "post">
 
-	<%@ include file = "navbar.jsp" %>
 	
 	
 	<div style='background-color:#ebe9eb'>
@@ -165,28 +164,6 @@ function showSlides() {
 <hr>
 
 <div class = "scrollmenu" style="max-width: 1200px">
-
-	<%
-	DAO2 dao = new DAO2(DBConnect.getConn());
-	List<viewlist> listv = dao.getAllviewlist();
-	for(viewlist v : listv)
-		{%>
-		<b>
-		<div class = "container border" style="background-color: white">
-		<center>
-			<table>
-				<tr><th>
-					<a href = 'selecteditem.jsp?Pn=<%=v.getPimage()%>'> <img src =' images/<%= v.getPimage() %>' height = 150px weight = 150px></a>
-				</th></tr><br>
-				<tr style='background-color: #ebe9eb'><th style='text-align: center'>
-					<a href = 'selecteditem.jsp?Pn=<%=v.getPimage()%>'> <%= v.getBname()%> <%= v.getPname()%></a>
-				</th></tr>
-			</table>	
-		</center>
-		</div>
-		</b>
-		
-		<%}%>
 	
 	</div>
 	<footer text-align: center;
@@ -194,7 +171,6 @@ function showSlides() {
   background-color: DarkSalmon;
   color: white;>
   
-	<%@ include file = "footer.jsp" %>
 </footer>
 
 
